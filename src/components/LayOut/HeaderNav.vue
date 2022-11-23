@@ -1,7 +1,7 @@
 <template>
   <el-row>
     <el-col :span="1">
-      <el-icon><Fold /> </el-icon>
+      <el-icon @click="handleMenu"><Fold /> </el-icon>
     </el-col>
     <el-col :span="16">
       <el-breadcrumb separator="/" class="breadcrumb">
@@ -25,11 +25,9 @@
         </div>
         <template #dropdown>
           <el-dropdown-menu>
-            <el-dropdown-item>Action 1</el-dropdown-item>
-            <el-dropdown-item>Action 2</el-dropdown-item>
-            <el-dropdown-item>Action 3</el-dropdown-item>
-            <el-dropdown-item disabled>Action 4</el-dropdown-item>
-            <el-dropdown-item divided>Action 5</el-dropdown-item>
+            <el-dropdown-item>主页</el-dropdown-item>
+            <el-dropdown-item>个人中心</el-dropdown-item>
+            <el-dropdown-item>退出</el-dropdown-item>
           </el-dropdown-menu>
         </template>
       </el-dropdown>
@@ -38,7 +36,20 @@
 </template>
 
 <script>
-export default {};
+import emitter from '@/untils/bus'
+export default {
+  data () {
+    return {
+      isAsideOpen: true
+    }
+  },
+  methods: {
+    handleMenu () {
+      this.isAsideOpen = !this.isAsideOpen
+      emitter.emit('handleMenu', this.isAsideOpen)
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>

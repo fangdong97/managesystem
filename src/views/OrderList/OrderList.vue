@@ -1,9 +1,11 @@
 <template>
-  <div>商品分类页</div>
+  <div>订单管理页</div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'OrderList'
+}
 </script>
 
 <style lang="scss" scoped></style>

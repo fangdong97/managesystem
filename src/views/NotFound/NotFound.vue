@@ -1,5 +1,7 @@
 <template>
-  <div>商品管理页</div>
+  <div>
+    <h2>404 ~~~~ NotFound</h2>
+  </div>
 </template>
 
 <script>

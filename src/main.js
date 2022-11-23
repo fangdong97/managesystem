@@ -5,6 +5,7 @@ import store from './store'
 import '@/assets/css/reset.css'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
+import '@/mock/Goods/getGoods'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 
 const app = createApp(App)

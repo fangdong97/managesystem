@@ -4,7 +4,9 @@
       <el-aside width="200px"><AsideMenu/></el-aside>
       <el-container>
         <el-header><HeaderNav/></el-header>
-        <el-main>Main</el-main>
+        <el-main>
+          <router-view></router-view>
+        </el-main>
       </el-container>
     </el-container>
   </div>
