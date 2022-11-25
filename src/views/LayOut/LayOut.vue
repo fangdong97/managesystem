@@ -13,14 +13,14 @@
 </template>
 
 <script>
-import AsideMenu from '@/components/LayOut/AsideMenu';
-import HeaderNav from '@/components/LayOut/HeaderNav.vue';
+import AsideMenu from '@/components/LayOut/AsideMenu'
+import HeaderNav from '@/components/LayOut/HeaderNav.vue'
 export default {
-  components:{
+  components: {
     AsideMenu,
     HeaderNav
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>

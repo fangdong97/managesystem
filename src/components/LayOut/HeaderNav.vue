@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import emitter from '@/untils/bus'
+import emitter from '@/utils/bus'
 export default {
   data () {
     return {
